@@ -9,6 +9,17 @@ import './index.css';
 const routing = (
     <Router>
         <div>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/api">Api</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+            </ul>
             <Route exact path="/" component={App} />
             <Route exact path="/api" component={Api} />
             <Route exact path="/about" component={About} />
